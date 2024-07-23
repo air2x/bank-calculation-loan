@@ -1,0 +1,15 @@
+
+spring:
+  flyway:
+    enabled: true
+    locations: classpath:db/migration
+    baseline-on-migrate: true
+  datasource:
+    url: jdbc:postgresql://localhost:5432/bank
+    driver-class-name: org.postgresql.Driver
+    username: postgres
+    password: postgres
+
+server:
+  port: 8000
+
